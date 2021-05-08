@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    padding:0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background:#14171E;
+    color: white;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0  0  0 300px;
+}
+
+main h1{
+    font-weight: 800;
+    color: #7991BC;
+    font-size: 4em;
+}
+
+main .social-media a img{
+    margin-top: 1.2em;
+    width: 40px;
+}
+
+main .social-media a:nth-child(2){
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+main .or{
+    text-align: center;
+    margin-top: 1.2em;
+}
+main .or span{
+    font-size: 1.4em;
+    font-weight: 400;
+    color: #7991BC;
+    position: relative;
+}
+
+main .or span::before, main .or span::after{
+    position: absolute;
+    content: '';
+    background:#7991BC;
+    height: 1px;
+    width: 100px;
+    bottom: 50%;
+    left: 50px;
+} 
+main .or span::after{
+    left: -120px;
+}
+
+main form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+form label{
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+    font-size: 1.5em;
+    color: #7991BC;
+}
+
+form input{
+    outline: none;
+    background:#30333A ;
+    color: white;
+    font-size: 1.1em;
+    padding: 0 0.4em;
+    border: none;
+    border-radius: 5px;
+}
+
+form input[type="submit"]{
+    width: 150px;
+    padding: 0.7em;
+    color: white;
+    font-size: 1.3em;
+    background:#3D5388 ;
+    border-radius: 40px;
+    cursor: pointer;
+    margin-top: 1em;
+    transition: all .3s ease-in-out;
+}
+
+form input[type="submit"]:hover{
+    background:linear-gradient(45deg,#344877, #6183d3)  ;
+    letter-spacing: 0.1em;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-end;
+    
+}
+
+section img{
+    position: absolute;
+    right: 100px;
+    bottom: 50px;  
+    z-index: -1;
+}
+
+section .circle{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background:linear-gradient(45deg,#3D5388,#7991BC );
+    clip-path: circle(40% at right 100% );
+    z-index: -1;
+}
+
